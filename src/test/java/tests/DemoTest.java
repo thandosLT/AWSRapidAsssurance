@@ -17,7 +17,7 @@ public class DemoTest extends BaseClass{
 		home = new homepage(_driver);
 		_driver = setup();
 	}
-	@Test
+	@Test(priority=1,groups="regression")
 	public void DemoTestToBeReviewed()
 	{
 		try {

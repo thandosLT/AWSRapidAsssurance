@@ -2,37 +2,40 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14473" started-at="2021-01-21T19:17:03 CAT" finished-at="2021-01-21T19:17:17 CAT">
+  <suite name="UI Tests" duration-ms="6278" started-at="2021-02-10T18:35:31 CAT" finished-at="2021-02-10T18:35:38 CAT">
     <groups>
+      <group name="regression">
+        <method signature="DemoTest.DemoTestToBeReviewed()[pri:1, instance:tests.DemoTest@5717c37]" name="DemoTestToBeReviewed" class="tests.DemoTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="14473" started-at="2021-01-21T19:17:03 CAT" finished-at="2021-01-21T19:17:17 CAT">
+    <test name="Funtional Testing" duration-ms="6278" started-at="2021-02-10T18:35:31 CAT" finished-at="2021-02-10T18:35:38 CAT">
       <class name="tests.DemoTest">
-        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.DemoTest@5a9f4771]" name="methodLevelSetup" is-config="true" duration-ms="51" started-at="2021-01-21T19:17:03 CAT" finished-at="2021-01-21T19:17:03 CAT">
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.DemoTest@5717c37]" name="methodLevelSetup" is-config="true" duration-ms="24" started-at="2021-02-10T18:35:32 CAT" finished-at="2021-02-10T18:35:32 CAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetup -->
-        <test-method status="FAIL" signature="DemoTestToBeReviewed()[pri:0, instance:tests.DemoTest@5a9f4771]" name="DemoTestToBeReviewed" duration-ms="12486" started-at="2021-01-21T19:17:03 CAT" finished-at="2021-01-21T19:17:15 CAT">
+        <test-method status="FAIL" signature="DemoTestToBeReviewed()[pri:1, instance:tests.DemoTest@5717c37]" name="DemoTestToBeReviewed" duration-ms="4725" started-at="2021-02-10T18:35:32 CAT" finished-at="2021-02-10T18:35:36 CAT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#reviewedtable > tbody > tr > td.start_btn1 > div > a"}
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'VAIO', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\thandos\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 37d440d97e42cb192e148e2076a26748
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\thandos\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa34ba2bca5bfe654c3af3caef8837d6
 *** Element info: {Using=css selector, value=#reviewedtable > tbody > tr > td.start_btn1 > div > a}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#reviewedtable > tbody > tr > td.start_btn1 > div > a"}
-  (Session info: chrome=87.0.4280.141)
+  (Session info: chrome=88.0.4324.104)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'VAIO', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\thandos\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52046}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 37d440d97e42cb192e148e2076a26748
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\thandos\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fa34ba2bca5bfe654c3af3caef8837d6
 *** Element info: {Using=css selector, value=#reviewedtable > tbody > tr > td.start_btn1 > div > a}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -85,11 +88,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DemoTestToBeReviewed -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.DemoTest@5a9f4771]" name="teardown" is-config="true" duration-ms="1548" started-at="2021-01-21T19:17:16 CAT" finished-at="2021-01-21T19:17:17 CAT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.DemoTest@5717c37]" name="teardown" is-config="true" duration-ms="1327" started-at="2021-02-10T18:35:36 CAT" finished-at="2021-02-10T18:35:38 CAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.DemoTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Funtional Testing -->
+  </suite> <!-- UI Tests -->
 </testng-results>
