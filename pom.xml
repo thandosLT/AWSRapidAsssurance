@@ -72,7 +72,7 @@
     				<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
     			</suiteXmlFiles-->
     			<suiteXmlFiles>
-    				<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+    				<suiteXmlFile>${DsuiteXmlFile}</suiteXmlFile>
     			</suiteXmlFiles>
     		</configuration>
   		</plugin>
