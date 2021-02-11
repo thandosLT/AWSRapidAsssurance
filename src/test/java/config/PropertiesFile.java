@@ -18,6 +18,7 @@ public class PropertiesFile {
 	public static void readPropertiesFile() {
 
 		try {
+			
 			InputStream input = new FileInputStream("C:\\Users\\thandos\\eclipse-workspace\\rappidassurance\\src\\test\\java\\config\\config.properties");
 			prop.load(input);
 			browser = prop.getProperty("Browser");
@@ -33,20 +34,23 @@ public class PropertiesFile {
 	
 	public static String getBrowser()
 	{
-		readPropertiesFile();
-		return browser;
+		//local - readPropertiesFile();
+		//return browser;
+		return System.getProperty("Browser");
 	}
 	
 	public static String getBaseUrl()
 	{
-		readPropertiesFile();
-		return baseUrl;
+		//local - readPropertiesFile();
+		//return baseUrl;
+		return System.getProperty("BaseUrl");
 	}
 	
 	public static String getGridValue()
 	{
-		readPropertiesFile();
-		return gridValue;
+		//local - readPropertiesFile();
+		//return gridValue;
+		return System.getProperty("gridValue");
 	}
 	
 }
