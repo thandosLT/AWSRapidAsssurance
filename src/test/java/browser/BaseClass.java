@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import config.PropertiesFile;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -24,11 +26,14 @@ public class BaseClass {
 	
 	//@BeforeTest
 	public RemoteWebDriver setup() {
-
-		//ConfigFileReader();
 		
-		//String baseUrl = properties.getProperty("BaseUrl");
+		
+		
 		String browserType = "DesktopChromeBrowser";
+		
+		String browser = PropertiesFile.getBrowser();
+		String baseurl = PropertiesFile.getBaseUrl();
+		String gridvalue = PropertiesFile.getGridValue();
 		
 		try {
 			DesiredCapabilities caps = new DesiredCapabilities();
@@ -38,16 +43,13 @@ public class BaseClass {
 			}
 			else if(browserType == "DesktopChromeBrowser") {
 				
-				caps.setBrowserName("chrome");
+				caps.setBrowserName(browser);
 				//caps.setPlatform(Platform.LINUX);//AWS Cloud
 				caps.setPlatform(Platform.WINDOWS);//local
 				
-				_driver = new RemoteWebDriver(new URL("http://192.168.8.100:4444/wd/hub"), caps);
-				//_driver = new RemoteWebDriver(new URL("https://18.132.190.37/:4444/wd/hub"), caps);
-				/*debug*/
-				//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				_driver = new RemoteWebDriver(new URL(gridvalue), caps);
 				_driver = new ChromeDriver();
-				_driver.get("http://uat.rapidassurance.ai/");
+				_driver.get(baseurl);
 			}
 			
 			_driver.manage().window().maximize();
@@ -70,21 +72,6 @@ public class BaseClass {
 		_driver.quit();
 	}
 	
-	private void ConfigFileReader(){
-		BufferedReader reader;
-		try {
-			reader = new BufferedReader(new FileReader(propertyFilePath));
-			properties = new Properties();
-			try {
-				properties.load(reader);
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
-		}		
-	}
+	
 	
 }

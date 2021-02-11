@@ -25,8 +25,8 @@ public class Responsibleuserloggedinpage extends BaseClass{
 	
 	public void clickStartToBeReviewed(RemoteWebDriver driver)
 	{
-		aScroll.ScrollBy(driver);
-		aClick.Click(driver, startElement);
+		//aScroll.ScrollBy(driver);
+		//aClick.Click(driver, startElement);
 	}
 	
 	
