@@ -36,21 +36,21 @@ public class PropertiesFile {
 	{
 		//local - readPropertiesFile();
 		//return browser;
-		return System.getProperty("Browser");
+		return System.getProperty("browser");
 	}
 	
 	public static String getBaseUrl()
 	{
 		//local - readPropertiesFile();
 		//return baseUrl;
-		return System.getProperty("BaseUrl");
+		return System.getProperty("baseurl");
 	}
 	
 	public static String getGridValue()
 	{
 		//local - readPropertiesFile();
 		//return gridValue;
-		return System.getProperty("gridValue");
+		return System.getProperty("gridvalue");
 	}
 	
 }

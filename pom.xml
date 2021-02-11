@@ -63,9 +63,9 @@
     		<version>3.0.0-M5</version>
     		<configuration>
     			<systemPropertyVariables>
-    				<browser>${Browser}</browser>
-    				<baseurl>${BaseUrl}</baseurl>
-    				<gridvalue>${gridValue}</gridvalue>
+    				<browser>${DBrowser}</browser>
+    				<baseurl>${DBaseUrl}</baseurl>
+    				<gridvalue>${DgridValue}</gridvalue>
     			</systemPropertyVariables>
     		
     			<!--suiteXmlFiles>
