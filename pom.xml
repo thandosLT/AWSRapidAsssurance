@@ -68,12 +68,10 @@
     				<gridvalue>${DgridValue}</gridvalue>
     			</systemPropertyVariables>
     		
-    			<!--suiteXmlFiles>
-    				<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-    			</suiteXmlFiles-->
     			<suiteXmlFiles>
-    				<suiteXmlFile>${DsuiteXmlFile}</suiteXmlFile>
+    				<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
     			</suiteXmlFiles>
+    			
     		</configuration>
   		</plugin>
   	</plugins>
